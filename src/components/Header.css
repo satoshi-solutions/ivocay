@@ -1,0 +1,165 @@
+.fixed-header {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999
+}
+
+.scrolled-header {
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background-color: hsla(0,0%,100%,.125)!important
+}
+
+.scrolled-header .navbar-container {
+    padding: 10px 0!important;
+}
+
+.scrolled-header .navbar-container .icon {
+    width: 90px!important
+}
+
+.btn-connect {
+    background-color: #283583!important;
+    color: #fff!important;
+    min-height: 36px!important;
+    padding: 0 16px!important;
+    transition: all .2s ease-in-out
+}
+
+.btn-connect:hover {
+    background-color: #f49400!important
+}
+
+.navbar-container {
+    align-items: center;
+    display: flex!important;
+    justify-content: space-between;
+    padding: 20px 0;
+    transition: all .3s ease-in-out
+}
+
+@media screen and (max-width: 1280px) {
+    .navbar-container {
+        padding:10px 20px
+    }
+}
+
+.navbar-container .icon {
+    transition: all .3s ease-in-out;
+    width: 113px
+}
+
+.navbar-container .nav-link-box {
+    align-items: center;
+    display: flex
+}
+
+.navbar-container .nav-link-box .nav-link {
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 25px;
+    padding: .5rem 0;
+    position: relative;
+    text-decoration: none
+}
+
+.navbar-container .nav-link-box .nav-link:hover {
+    color: #f49400
+}
+
+.navbar-container .nav-link-box .nav-link:after {
+    background-color: #f49400;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s ease-in-out;
+    width: 100%
+}
+
+.navbar-container .nav-link-box .nav-link:hover:after {
+    transform: scaleX(1)
+}
+
+.navbar-container .account-icon {
+    margin-right: 10px;
+    transition: all .3s ease-in-out;
+    width: 40px
+}
+
+.navbar-container .address {
+    color: #283583;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-right: 20px
+}
+
+.navbar-container .copy-icon {
+    color: #283583;
+    cursor: pointer;
+    transition: all .2s ease-in-out
+}
+
+.navbar-container .copy-icon:hover {
+    color: #f49400
+}
+
+.navbar-container .btn-disconnect {
+    background: #283583;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 800;
+    transition: all .2s ease-in-out;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.navbar-container .btn-disconnect:hover {
+    text-shadow: 0 0 10px #0000004d
+}
+
+.navbar-container .hamburger-react {
+    color: #283583
+}
+
+.navbar-container .menu-icon {
+    display: none
+}
+
+.mobile-menu .MuiList-root .MuiMenuItem-root {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+@media(max-width: 800px) {
+    .icon {
+        margin-left:15px;
+        width: 80px!important
+    }
+
+    .navbar-container {
+        padding: 10px 0
+    }
+
+    .navbar-container .nav-link-box {
+        margin-right: 20px
+    }
+
+    .navbar-container .nav-link-box .menu-icon {
+        display: block!important;
+        scale: .6
+    }
+
+    .navbar-container .nav-link-box .list-items {
+        display: none
+    }
+}
